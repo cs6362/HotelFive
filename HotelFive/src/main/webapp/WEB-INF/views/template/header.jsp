@@ -51,7 +51,6 @@
 			}
 		});
 	}
-
 	function fn_resetCaptcharImg() {
 		$.ajax({
 			url : 'getImage',
