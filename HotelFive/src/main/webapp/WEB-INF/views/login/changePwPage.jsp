@@ -9,24 +9,6 @@
 </jsp:include>
 	 
 
-
-
-<style type="text/css">
-   .change-pw-box {width: 1000px; margin: 250px auto 150px; }
-   .change-pw-box #bold {font-weight: bold; font-size: 14px;}
-   .change-pw-box #nobold{font-size: 12px; margin: 0;}
-   .change-pw-box #tableon {font-size: 12px; font-weight: bold; color: gray; padding-left: 10px;}
-   .change-pw-box table {width: 1000px; border-collapse: collapse; border-bottom: 1px solid black; border-top: 1px solid black; }
-   .change-pw-box table tr td {padding: 15px 15px;}
-   .change-pw-box table tr td:nth-of-type(1) {text-align: center; font-weight: bold; background: #F9F9F9; width: 200px; font-size: 14px;} 
-   .change-pw-box table tr:nth-of-type(2) td, .change-pw-box table tr:nth-of-type(1) td {border-bottom: 1px solid lightgray;}
-   .change-pw-box table input[type=text], .change-pw-box table input[type=password] {width: 300px; padding: 3px 10px; border: 1px solid lightgray; }
-   .change-pw-box table input[type=text]:hover, .change-pw-box table input[type=text]:focus, .change-pw-box table input[type=password]:hover, .change-pw-box table input[type=password]:focus {outline: none;}
-   .btnbox {width: 1000px; text-align: center;}
-   #changePwBtn {width: 190px; padding: 7px 10px; border: none; background-color: darkgray; color:white; margin-top: 30px;}
-   #changePwBtn:hover {outline: none; background-color: #353535;}
-</style>
-
 <script type="text/javascript">
    
    $(document).ready(function(){  // onload 이벤트

@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	font-family: "Inconsolata", sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.header-wrap {
+	position: absolute;
+	top: 0;
+	text-align: center;
+	background-color: rgba(256, 256, 256, 0.4);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	width: 100%;
+	margin-top: 0px;
+	position: fixed;
+	z-index: 10;
+}
+
+.center-tab a {
+	color: white;
+	text-shadow: 2px 2px 2px gray;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 40px 40px 0;
+}
+
+.center-tab>a:hover {
+	color: black;
+}
+
+.center-tab {
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+}
+
+.center-tab #logo {
+	width: 200px;
+}
+
+#loginout {
+	margin-top: 40px;
+	margin-right: 50px;
+}
+
+#loginout:hover {
+	color: black;
+}
+
+.main-wrap {
+	z-index: 1;
+}
+
+/* .footer-wrap {
+         width: 100%;
+        height: 200px;
+        background-color: rgb(30,30,30);
+        left: 0; 
+        bottom: 0;
+   } */
+.footer {
+	height: 200px;
+	width: 100%;
+	padding: 30px 0 30px 0;
+	font-size: 13px;
+	color: white;
+	background-color: rgb(30, 30, 30);
+	bottom: 0;
+}
+
+.footer .footer_menu {
+	margin-bottom: 20px;
+}
+
+.footer ul {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.footer ul li {
+	display: inline;
+	margin: 0;
+	height: 10px;
+}
+
+.footer ul.footer_menu li {
+	padding-right: 15px;
+}
+
+.footer ul.company_info li {
+	padding-right: 5px;
+}
+
+.footer ul.footer_menu li:after {
+	content: '';
+	width: 1px;
+	height: 10px;
+	background: #2e2e2e;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.footer ul.company_info li:after {
+	content: '';
+	width: 1px;
+	height: 10px;
+	background: #2e2e2e;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.footer ul li:last-child:after {
+	display: none;
+}
+
+.footer p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.footer-img {
+	width: 30px;
+}
+
+.footer-wrap .footer-content {
+	color: rgb(170, 170, 170);
+	column-count: 2;
+	column-gap: 40px;
+	font-weight: 300;
+	width: 900px;
+	margin: auto;
+	padding: 50px 0 0 0;
+}
+
+.footer-bottom {
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	text-align: center;
+	color: rgb(220, 220, 220);
+	background-color: rgb(60, 60, 60);
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.6);
+	min-width: 130px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: white;
+	margin: 0 20px 40px 20px;
+	text-shadow: 0px 0px 0px;
+	font-weight: lighter;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a:hover {
+	text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	display:
+}
+
+.dropdown:hover .dropbtn {
+	background-color: rgb(190, 190, 190);
+}
+
+.test_1 {
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 200;
+	position: fixed;
+}
+
+.test_1.open {
+	display: block;
+}
+
+.test_1.open:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	z-index: 25;
+	position: fixed;
+	background: black;
+	opacity: 0.4;
+	top: 0;
+}
+
+.test_1 .test_2 {
+	position: fixed;
+	margin: auto;
+	top: 50%;
+	z-index: 30;
+	background: white;
+	left: 50%;
+	width: 450px;
+	padding: 20px 45px 50px;
+	height: 570px;
+	margin-top: -268px;
+	margin-left: -255px;
+}
+
+.login-box h1 {
+	text-align: center;
+}
+
+.login-text {
+	width: 360px;
+	height: 47px;
+	padding-left: 20px;
+	border: 1px solid #d9d9d9;
+	margin: 0 0 10px;
+	font-size: 14px;
+}
+
+.find {
+	float: right;
+}
+
+#loginButton {
+	border: none;
+	width: 360px;
+	padding: 10px 0;
+	background: black;
+	color: white;
+	margin: 10px 0;
+}
+
+#loginButton:hover {
+	outline: none;
+	background: #5A5A5A;
+}
+
+#registerButton {
+	border: none;
+	width: 360px;
+	padding: 10px 0;
+	background: #E3EAF3;
+	margin: 0 0 10px
+}
+
+#registerButton:hover {
+	outline: none;
+	background: #A4CAED;
+}
+/*    a {text-decoration: none; font-size: 0.9em; color: black;} */
+#line {
+	margin: auto;
+	color: gray;
+	width: 1400px;
+	border: 1px solid silver
+}
+
+#pagetitle {
+	font-size: 85px;
+}
+
+#hotelfive, #explain {
+	font-weight: bold;
+}
+
+#explain {
+	font-size: 15px;
+}
+
+#roominfo {
+	width: 200px;
+}

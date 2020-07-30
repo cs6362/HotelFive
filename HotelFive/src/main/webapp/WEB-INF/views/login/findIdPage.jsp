@@ -69,26 +69,6 @@
    });
    
 </script>
-
-<style type="text/css">
-   .find-id-box {width: 1000px; margin: 250px auto 50px; }
-   .find-id-box #bold {font-weight: bold; font-size: 14px;}
-   .find-id-box #nobold{font-size: 12px; margin: 0;}
-   .find-id-box #tableon {font-size: 12px; font-weight: bold; color: gray; padding-left: 10px;}
-   .find-id-box table {width: 1000px; border-collapse: collapse; border-bottom: 1px solid black; border-top: 1px solid black; }
-   .find-id-box table tr td {padding: 15px 15px;}
-   .find-id-box table tr td:nth-of-type(1) {text-align: center; font-weight: bold; background: #F9F9F9; width: 200px; font-size: 14px;} 
-   .find-id-box table tr:nth-of-type(2) td, .find-id-box table tr:nth-of-type(1) td {border-bottom: 1px solid lightgray;}
-   .find-id-box table input[type=text] {width: 300px; padding: 3px 10px; border: 1px solid lightgray; }
-   .find-id-box table input[type=text]:hover, .find-id-box table input[type=text]:focus {outline: none;}
-   .find-id-box table input[type=button] {padding: 3px; width: 120px; background-color: darkgray; color: white; font-weight: bold; border: none;}
-   .find-id-box table input[type=button]:hover,  .find-id-box table input[type=button]:focus {outline: none;}
-   #findIdResult {display: inline-block; padding-left: 20px; color:red;}
-   .btnbox {width: 1000px; text-align: center;}
-   #findPwBtn {width: 190px; padding: 7px 10px; border: none; background-color: darkgray; color:white; margin-top: 30px;}
-   #findPwBtn:hover {outline: none; background-color: #353535;}
-</style>
-
 <div class="find-id-box">
 
    <p id="bold">아이디 찾기</p>

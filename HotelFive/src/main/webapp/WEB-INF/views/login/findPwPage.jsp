@@ -12,21 +12,6 @@
 
 
 
-<style type="text/css">
-   .find-pw-box {width: 1000px; margin: 250px auto 150px; }
-   .find-pw-box #bold {font-weight: bold; font-size: 14px;}
-   .find-pw-box #nobold{font-size: 12px; margin: 0;}
-   .find-pw-box #tableon {font-size: 12px; font-weight: bold; color: gray; padding-left: 10px;}
-   .find-pw-box table {width: 1000px; border-collapse: collapse; border-bottom: 1px solid black; border-top: 1px solid black; }
-   .find-pw-box table tr td {padding: 15px 15px;}
-   .find-pw-box table tr td:nth-of-type(1) {text-align: center; font-weight: bold; background: #F9F9F9; width: 200px; font-size: 14px;} 
-   .find-pw-box table tr:nth-of-type(2) td, .find-pw-box table tr:nth-of-type(1) td {border-bottom: 1px solid lightgray;}
-   .find-pw-box table input[type=text] {width: 300px; padding: 3px 10px; border: 1px solid lightgray; }
-   .find-pw-box table input[type=text]:hover, .find-pw-box table input[type=text]:focus {outline: none;}
-   .find-pw-box table input[type=button] {padding: 3px; width: 120px; background-color: darkgray; color: white; font-weight: bold; border: none;}
-   .find-pw-box table input[type=button]:hover,  .find-pw-box table input[type=button]:focus {outline: none;}
-   
-</style>
 
 <script type="text/javascript">
    var authKey = "";

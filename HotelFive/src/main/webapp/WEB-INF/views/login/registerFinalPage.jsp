@@ -8,12 +8,6 @@
 	<jsp:param value="회원가입" name="title"/>
 </jsp:include>
 
-<style type="text/css">
-	.page-box-3 {margin: 30px auto;padding: 200px 0 30px 0;text-align: center;}
-	.page-box-3 input[type=button] {width: 190px; padding: 7px 10px; border: none; background-color: darkgray; color:white; margin-top: 30px;}
-	.page-box-3 input[type=button]:hover, .page-box-3 input[type=button]:focus {outline: none; background-color: #353535;}
-</style>
-
 <div id="page-box-3" class="page-box-3">
 	<h3>MEMBERSHIP</h3>
    	<img alt="step3" src="resources/assets/register_img/step3.jpg"><br/><br><br/>

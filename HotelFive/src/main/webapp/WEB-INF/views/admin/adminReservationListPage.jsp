@@ -11,76 +11,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><!-- alert 꾸미기 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<style>
-.container { margin-bottom : 80px;}
-   .queryBtn {
-     width: 70px;
-     background-color: #4CAF50; /* Green */
-     border: none;
-     color: white;
-     padding: 7px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 15px;
-     cursor: pointer;
-     border-radius: 4px;
-   }
-   tr, th {text-align: center;}
-   select {
-     width: 140px;
-     padding: .6em .3em;
-     font-family: inherit;
-     background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
-     -webkit-appearance: none;
-     -moz-appearance: none;
-     appearance: none;
-     border: 1px solid #999;
-     border-radius: 0px;
-   }
-   select::-ms-expand {
-     /* for IE 11 */
-     display: none;
-   }
-   .queryInput{
-      height: 40px;
-      border-radius: 3px;
-   }
-   .Btn{
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 10px 24px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      transition-duration: 0.4s;
-      cursor: pointer;
-   }
-   .btnTotalList {
-     background-color: white; 
-     color: black; 
-     border: 2px solid #4CAF50;
-   }
-   .btnTotalList:hover {
-     background-color: #4CAF50;
-     color: white;
-   }
-   .confirmBtn, .cancelBtn{
-     background-color: #4CAF50; /* Green */
-     border: none;
-     color: white;
-     padding: 5px 10px;
-     text-align: center;
-     text-decoration: none;
-     font-size: 13px;
-     cursor: pointer;
-   }
-   .confirmBtn:hover { background-color: #3e8e41; }
-   .cancelBtn:hover{ background-color: #3e8e41; }
-</style>
+
 <script type="text/javascript">
    // 예약 승인하기
    function fn_ReservationOk(f){
@@ -89,26 +20,6 @@
 		  f.action = 'ReservationOk';
           f.submit();
 	  }
-      /* swal({
-           title: "예약을 승인하시겠습니까?",
-           text: "",
-           icon: "warning",
-           buttons: true,
-           dangerMode: true,
-         })
-         .then((willDelete) => {
-           if (willDelete) {
-             swal("승인되었습니다", {
-               icon: "success",
-             });
-             setTimeout(function(){
-               f.action = 'ReservationOk';
-               f.submit();
-             }, 1000);
-           } else {
-             swal("취소하였습니다");
-           }
-      }); */
    }
    
    // 예약 취소하기
@@ -118,26 +29,6 @@
 			  f.action = 'ReservationCancel';
               f.submit();
 		}
-     /*  swal({
-           title: "정말로 고객의 예약을 취소하시겠습니까?",
-           text: "",
-           icon: "warning",
-           buttons: true,
-           dangerMode: true,
-         })
-         .then((willDelete) => {
-           if (willDelete) {
-             swal("예약이 취소되었습니다", {
-               icon: "success",
-             });
-             setTimeout(function(){
-                f.action = 'ReservationCancel';
-               f.submit();
-             }, 1000);
-           } else {
-             swal("취소하였습니다");
-           }
-      }); */
    }
    
    // 승인된 예약 취소하여 삭제하기
@@ -147,26 +38,7 @@
 			  f.action = 'ReservationDelete';
               f.submit();
 		}
-      /* swal({
-           title: "승인이 확정된 예약을 취소하시겠습니까?",
-           text: "",
-           icon: "warning",
-           buttons: true,
-           dangerMode: true,
-         })
-         .then((willDelete) => {
-           if (willDelete) {
-             swal("승인 확정된 예약이 취소되었습니다.", {
-               icon: "success",
-             });
-             setTimeout(function(){
-                f.action = 'ReservationDelete';
-               f.submit();
-             }, 1000);
-           } else {
-             swal("취소하였습니다");
-           }
-         }); */
+     
    }
    // 예약 현황 검색하기
    function fn_queryAdminReservationList(f){
@@ -185,10 +57,9 @@
       } 
       f.action = 'queryAdminReservationPage';
       f.submit();
-   }
+   }  
 </script>
 
-<br><br><br><br><br><br><br><br><br>
 <div class="container"> <!-- 전체 예약 현황-->
 
    <h1 class="text-center">전체 예약 현황</h1><br>
@@ -283,29 +154,6 @@
 </div>
 
 <br><br><br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
