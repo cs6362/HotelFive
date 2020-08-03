@@ -64,7 +64,7 @@
 	<p id="explain">호텔파이브의 각종 이벤트 및 소식</p>
 </div>
 <div class="qnaBoardUpdateBox">
-	<img id="notice_name" alt="notice_name"
+	<img id="writing_name" alt="writing_name"
 		src="resources/assets/name_img/update_name.png" /><br />
 	<form method="POST">
 		<div class="viewBox">

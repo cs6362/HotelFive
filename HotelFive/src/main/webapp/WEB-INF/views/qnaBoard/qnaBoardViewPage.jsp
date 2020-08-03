@@ -137,7 +137,7 @@
 	<p id="explain">호텔파이브에 대한 관련 질문</p>
 </div>
 <div class="qnaBoard-viewBox">
-	<img id="notice_name" alt="qna_name"
+	<img id="writing_name" alt="writing_name"
 		src="resources/assets/name_img/qna_name.png" /><br />
 	<form method="POST">
 		<div class="viewBox">
@@ -189,8 +189,8 @@
 	</form>
 </div>
 <br />
-<div class="qnaBoardReply-insertBox">
-	<img id="notice_name" alt="qna_name"
+<div class="BoardReply-insertBox">
+	<img id="writing_name" alt="qna_name"
 		src="resources/assets/name_img/answer_name.png" /><br />
 	<c:if test="${loginDTO ne null }">
 		<c:if test="${loginDTO.mId eq 'admin' }">
@@ -220,7 +220,7 @@
 		</c:if>
 	</c:if>
 </div>
-<div class="qnaBoardReply-viewBox">
+<div class="BoardReply-viewBox">
 	<table class="reply-viewTable">
 		<tbody>
 			<c:if test="${empty reList }">

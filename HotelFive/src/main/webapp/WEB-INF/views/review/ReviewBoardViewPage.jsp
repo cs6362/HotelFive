@@ -100,127 +100,6 @@
 	});
 	
 </script>
-<style>
-	.reviewView-box{
-		width: 1100px; 
-		margin-bottom: 50px; 
-		margin: 200px auto;
-		text-align: center;
-	}
-	.reviewView-box #reviewView-table{
-		width: 1100px;
-		margin: 5px auto;
-		border-collapse: collapse;
-	}
-	.reviewView-box #reviewView-table td{
-		border: 1px solid lightgray;
-		padding: 10px 20px;
-	}
-	.reviewView-box tr td:nth-of-type(1) {width: 200px;}
-	.reviewView-box #reviewView-table tr td:nth-of-type(1) {width: 200px; font-weight: bold;background: #EAF2FF;}
-	.reviewView-box #reviewView-table tr td:nth-of-type(3) {width: 200px; font-weight: bold;background: #EAF2FF;}
-	.reviewView-box #reviewView-table tr td:nth-of-type(2), .reviewView-box #reviewView-table tr td:nth-of-type(4) {text-align: left;}
-	.reviewView-box #review-img {
-		width: 300px;
-		height: 250px;
-	} 
-	.reviewView-box .reviewBtn {width: 80px;  float: right;background: white; cursor: pointer; padding: 10px;border: 1px solid lightgray;}
-	.ReviewBoardReplyInsert-box{
-      margin: 0 auto;
-      width: 1100px;
-      text-align: center;
-   }
-
-   .ReviewBoardReplyInsert-box th{
-      width: 110px;
-      background: #EAF2FF;
-   }
-   .reviewreply-insertTable{
-      margin: 10px auto;
-      width: 1100px;
-   }
-   .reviewreply-insertTable th, td{
-      border: 1px solid lightgray;
-   }
-   .reviewreply-insertTable td:nth-of-type(2){
-      border: none;
-   }
-   .reviewreply-insertTable input {
-      padding: 5px;
-      border: 1px solid lightgray;
-      background: white;
-      cursor: pointer;
-   }
-   .reviewreply-insertTable tr:nth-of-type(2) td{
-      height: 10px;
-      border: none;
-   }
-   .reviewreply-insertTable tr:nth-of-type(2) td input{
-      height: 100%;
-   }
-	 .limited_text_wrap1{
-      width: 990px;
-      height: auto;
-      position: relative;
-      display: inline-block;
-   }
-   .limited_text_wrap1 textarea{
-      width: 100%;
-      resize: none;
-      min-height: 9.5em;
-      line-height: 1.6em;
-      max-height: 9em;
-   }
-   .limited_text_wrap1 span{
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-   }
-   #counter1{
-      border-radius: 5px;
-      padding: 0 5px 0 5px;
-      font-size: 1.35em;
-   }
-	
-	.reply-viewTable{
-      margin: 0 auto;
-      width: 1100px;
-   }
-   .reply-viewTable th, td{
-      border: 1px solid lightgray;
-   }
-   .reply-viewTable input:nth-of-type(1){
-      padding: 10px;
-      border: 1px solid lightgray;
-      background: white;
-   }
-   .reply-viewTable input:nth-of-type(2){
-      padding: 10px;
-      border: 1px solid lightgray;
-      background: white;
-   }
-   .reply-viewTable tr td:nth-of-type(1){
-      width: 100px;
-      text-align: center;
-      font-weight: bold;
-      background: #EAF2FF;
-   }
-   .reply-viewTable tr td:nth-of-type(2){
-      width: 860px;
-   }
-   .reply-viewTable tr td:nth-of-type(3){
-      width: 70px;
-   }
-   .reply-viewTable tr td:nth-of-type(4){
-      background: aqua;
-      width: 70px;
-      white-space: pre-line;
-   }
-	.hidden-row td{
-		border: none;
-	}
-	#review_name{width: 200px;}
-</style>
 
 <div class="reviewView-box">
 <form method="post">
@@ -243,7 +122,7 @@
 			<td>CONTENT</td>
 			<td colspan="3">
 				${hDTO.rContent }<br/>
-				<img id="review-img" alt="${hDTO.rFilename }" src="${pageContext.request.contextPath }/resources/storage/${hDTO.rFilename }">
+				<img id="writing_name" alt="${hDTO.rFilename }" src="${pageContext.request.contextPath }/resources/storage/${hDTO.rFilename }">
 			</td>
 		</tr>
 		
@@ -258,34 +137,36 @@
 	
 </form>
 <br/><br/>
-<img id="review_name" alt="qna_name" src="resources/assets/name_img/answer_name.png"/><br/> 
-<c:if test="${loginDTO.mId ne null }">
-	<div class="ReviewBoardReplyInsert-box">
-		<form method="POST">
-			<table class="reviewreply-insertTable">
-				<tr>
-					<th>${loginDTO.mId }</th>
-					<td>
-						<div class="limited_text_wrap1">
-							<textarea id="reContentInsertBox" name="reContent" placeholder="답변을 100자 이내로 기재해 주세요."></textarea>
-							<span id="counter1">###</span>
-						</div>
-					</td>
+<div class="BoardReply-insertBox">
+	<img id="writing_name" alt="qna_name" src="resources/assets/name_img/answer_name.png"/><br/> 
+	<c:if test="${loginDTO.mId ne null }">
+		<div class="reply-insertBox">
+			<form method="POST">
+				<table class="reply-insertTable">
 					<tr>
-					<td colspan="2">
-						<input type="button" value="등록" onclick="fn_replyInsert(this.form)"/>
-						<input type="hidden" name="mId" value="${loginDTO.mId }"/>
-						<input type="hidden" name="rNo" value="${hDTO.rNo }"/>
-						<input type="hidden" name="page" value="${page }"/>
-					</td>
-				</tr>
-			</table>
-			
-		</form>
-	</div>
-</c:if>
+						<th>${loginDTO.mId }</th>
+						<td>
+							<div class="limited_text_wrap1">
+								<textarea id="reContentInsertBox" name="reContent" placeholder="답변을 100자 이내로 기재해 주세요."></textarea>
+								<span id="counter1">###</span>
+							</div>
+						</td>
+						<tr>
+						<td colspan="2">
+							<input type="button" value="등록" onclick="fn_replyInsert(this.form)"/>
+							<input type="hidden" name="mId" value="${loginDTO.mId }"/>
+							<input type="hidden" name="rNo" value="${hDTO.rNo }"/>
+							<input type="hidden" name="page" value="${page }"/>
+						</td>
+					</tr>
+				</table>
+				
+			</form>
+		</div>
+	</c:if>
+</div>
 <br/>
-<div class="ReviewBoardReplyList-box">
+<div class="BoardReply-viewBox">
 	<table class="reply-viewTable">
 		<tbody>
 			<c:if test="${empty reList }">

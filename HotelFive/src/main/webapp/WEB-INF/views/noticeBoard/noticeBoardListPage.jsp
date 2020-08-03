@@ -40,7 +40,7 @@
 </div>
 
 <div class="noticeListBox">
-	<img id="notice_name" alt="notice_name" src="resources/assets/name_img/notice_name1.png"/><br/> 
+	<img id="writing_name" alt="writing_name" src="resources/assets/name_img/notice_name1.png"/><br/> 
 	<c:if test="${loginDTO.mRight eq 1 }">
 		<a class="noticeInsertBtn" href='noticeBoardInsertPage'><i class="fas fa-user-edit fa-2x"></i>게시물 작성</a><br/>
 	</c:if>

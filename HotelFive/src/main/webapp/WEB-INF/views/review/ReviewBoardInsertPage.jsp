@@ -6,18 +6,7 @@
 	<jsp:param value="이용후기작성" name="title" />
 </jsp:include>
 <style type="text/css">
-@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
-	.board-insert-box {text-align: center; padding-top: 50px;}
-	.board-insert-box table {margin: auto;}
-	.board-insert-box {width: 1000px; margin: 0 auto 90px; text-align: center;}
-	.board-insert-box table {width:1000px; border: 2px solid lightgray; border-collapse: collapse; margin: 20px auto;}
-	.board-insert-box table td {border: 1px solid lightgray; padding: 10px 20px;}
-	.board-insert-box table td:nth-of-type(1) {width: 200px;background: #EAF2FF; font-weight: bold;}
-	.board-insert-box table td:nth-of-type(2) {text-align: left;}
-	.board-insert-box input[type=text], .board-insert-box select, .board-insert-box textarea {padding:6px 10px; width: 700px; border: 1px solid lightgray;}
-	.board-insert-box input[type=text]:hover, .board-insert-box input[type=text]:focus, .board-insert-box textarea:focus, .board-insert-box textarea:hover, .board-insert-box select:hover, .board-insert-box select:focus {outline: none; border-color: #353535}
-	.board-insert-box span {display:inline-block;width: 200px;}
-	.board-insert-box input[type=button], .board-insert-box input[type=submit], .board-insert-box input[type=reset] {width: 80px;  float: right;background: white; cursor: pointer; padding: 10px;border: 1px solid lightgray;}
+	@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 	.notice_backimg {
 		width: 100%; 
 		height: 750px; 
@@ -27,53 +16,6 @@
 		color: white; 
 		padding-top: 300px;
 	}
-	.notice_backimg #pagetitle {font-size: 85px;}
-	.notice_backimg #hotelfive, #explain {font-weight: bold;}
-	.notice_backimg #explain {font-size: 15px;}
-	/* star */
-
-
-	/* fieldset, label { margin: 0; padding: 0; }
-	body{ margin: 20px; }
-	h1 { font-size: 1.5em; margin: 10px; } */
-	
-	/****** Style Star Rating Widget *****/
-	
-	.rating { 
-	  border: none;
-	  float: left;
-	}
-	
-	.rating > input { display: none; } 
-	.rating > label:before { 
-	  margin: 5px;
-	  font-size: 1.25em;
-	  font-family: FontAwesome;
-	  display: inline-block;
-	  content: "\f005";
-	}
-	
-	.rating > .half:before { 
-	  content: "\f089";
-	  position: absolute;
-	}
-	
-	.rating > label { 
-	  color: #ddd; 
-	 float: right; 
-	}
-	
-	/***** CSS Magic to Highlight Stars on Hover *****/
-	
-	.rating > input:checked ~ label, /* show gold star when clicked */
-	.rating:not(:checked) > label:hover, /* hover current star */
-	.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-	
-	.rating > input:checked + label:hover, /* hover current star when changing rating */
-	.rating > input:checked ~ label:hover,
-	.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-	.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
-	#writing_name {width: 200px;}
 </style>
 
 <script type="text/javascript">
@@ -107,7 +49,7 @@
 	<p id="explain">호텔파이브의 각종 이벤트 및 소식</p>
 </div>
 
-<div class="board-insert-box">
+<div class="noticeInsertBox">
 	<img id="writing_name" alt="writing_name" src="resources/assets/name_img/writing_name1.png"/><br/> 
 	<form method="POST" enctype="multipart/form-data">
 		<table class="name-title">
@@ -175,9 +117,9 @@
 					</td>
 				</tr>
 			</table>
-			<input type="button" value="SAVE" onclick="fn_insertBoard(this.form)" />
-			<input type="reset" value="RESET" />
-			<input type="button" value="LIST" onclick="fn_boardListPage()" />
+			<input class="noticeBtn" type="button" value="SAVE" onclick="fn_insertBoard(this.form)" />
+			<input class="noticeBtn" type="reset" value="RESET" />
+			<input class="noticeBtn" type="button" value="LIST" onclick="fn_boardListPage()" />
 	</form>
 </div>
 

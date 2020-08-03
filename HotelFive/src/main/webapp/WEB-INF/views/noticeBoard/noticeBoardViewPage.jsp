@@ -66,7 +66,7 @@
 </div>
 
 <div class="noticeViewBox">
-	<img id="notice_name" alt="notice_name" src="resources/assets/name_img/notice_name1.png"/><br/> 
+	<img id="writing_name" alt="writing_name" src="resources/assets/name_img/notice_name1.png"/><br/> 
 	<form id="f">
 		<table class="headerTable">
 			<tr>
@@ -107,8 +107,8 @@
 			<input class="noticeviewBtn" type="button" value="LIST" onclick="location.href='noticeBoardListPage?page=${page}'" />
 			<c:if test="${loginDTO.mRight eq 1 }">
 				
-				<input class="noticeviewBtn" id="delete_btn" type="button" value="DELETE"  />
-				<input class="noticeviewBtn" type="button" value="WRITE" onclick="location.href='noticeBoardInsertPage'"/>
+				<input class="noticeBtn" id="delete_btn" type="button" value="DELETE"  />
+				<input class="noticeBtn" type="button" value="WRITE" onclick="location.href='noticeBoardInsertPage'"/>
 			</c:if>
 		</div>
 	</form>

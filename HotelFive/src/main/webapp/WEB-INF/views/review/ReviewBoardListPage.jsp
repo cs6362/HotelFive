@@ -5,15 +5,6 @@
 	<jsp:param value="게시판" name="title" />
 </jsp:include>
 <style type="text/css">
-	.ReviewBoard-list-box {width: 1100px; margin-bottom: 50px; margin: 50px auto; text-align: center;}
-	.ReviewBoard-list-box table{margin:auto; border-collapse: collapse;width: 1100px;}
-	.ReviewBoard-list-box thead td {background: #DAE2F0;}
-	.ReviewBoard-list-box td {text-align: center; padding:10px;border-bottom: 1px solid lightgray;}
-	.ReviewBoard-list-box tr td:nth-of-type(1) {width: 100px;}
-	.ReviewBoard-list-box tr td:nth-of-type(2) {width: 500px;}
-	.ReviewBoard-list-box tr td:nth-of-type(3) {width: 150px;}
-	.ReviewBoard-list-box tr td:nth-of-type(4) {width: 150px;}
-	.ReviewBoard-list-box tr td:nth-of-type(5) {width: 100px;}
 	.review_backimg 
 	{
 		width: 100%; 
@@ -24,11 +15,6 @@
 		color: white; 
 		padding-top: 300px;
 	}
-	.ReviewBoard-list-box .reviewInsertBtn {float: right; margin-bottom: 10px; text-decoration: none;}
-	.review_backimg  #pagetitle {font-size: 85px;}
-	.review_backimg  #hotelfive, #explain {font-weight: bold;}
-	.review_backimg  #explain {font-size: 15px;}
-	#review_name {width: 200px;}
 </style>
 
 
@@ -38,10 +24,10 @@
 	<p id="explain">호텔파이브에서 보낸 이용후기</p>
 </div>
 
-<div class="ReviewBoard-list-box">
-	<img id="review_name" alt="notice_name" src="resources/assets/name_img/review_name.png"/><br/> 
+<div class="noticeListBox">
+	<img id="writing_name" alt="writing_name" src="resources/assets/name_img/review_name.png"/><br/> 
 	<c:if test="${loginDTO ne null }">
-		<a class="reviewInsertBtn" href='ReviewBoardInsertPage' ><i class="fas fa-user-edit fa-2x"></i>게시물 작성</a>
+		<a class="noticeInsertBtn" href='ReviewBoardInsertPage' ><i class="fas fa-user-edit fa-2x"></i>게시물 작성</a>
 	</c:if>
 	<br/><br/>
 	

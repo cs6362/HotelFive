@@ -1,698 +1,167 @@
 @charset "UTF-8";
 
 /* noticeBoardInsertPage.jsp */
-.noticeInsertBox {
-	width: 1100px;
-	margin: 50px auto 50px;
-	text-align: center;
-}
+.noticeInsertBox {width: 1000px; margin: 50px auto 100px;text-align: center;}
+.noticeInsertBox table {width: 1000px;border: 2px solid lightgray;border-collapse: collapse;margin: 20px auto;}
+.noticeInsertBox table td {	border: 1px solid lightgray;padding: 10px 20px;}
+.noticeInsertBox table td:nth-of-type(1) {width: 200px;background: #EAF2FF;font-weight: bold;}
+.noticeInsertBox table td:nth-of-type(2) {text-align: left;}
+.noticeInsertBox input[type=text] {padding: 6px 10px;width: 700px;border: 1px solid lightgray;}
+.noticeInsertBox input[type=text]:hover, .noticeInsertBox input[type=text]:focus, .noticeInsertBox textarea:hover, .noticeInsertBox textarea:focus{outline: none;border-color: #353535}
+.noticeInsertBox span {display: inline-block;width: 200px;}
+/*  .noticeInsertBox*/ 
+.noticeBtn {width: 80px;float: right;background: white;cursor: pointer;padding: 10px;border: 1px solid lightgray;}
 
-.noticeInsertBox table {
-	width: 1000px;
-	border: 2px solid lightgray;
-	border-collapse: collapse;
-	margin: 20px auto;
-}
-
-.noticeInsertBox table td {
-	border: 1px solid lightgray;
-	padding: 10px 20px;
-}
-
-.noticeInsertBox table td:nth-of-type(1) {
-	width: 200px;
-	background: #EAF2FF;
-	font-weight: bold;
-}
-
-.noticeInsertBox table td:nth-of-type(2) {
-	text-align: left;
-}
-
-.noticeInsertBox input[type=text] {
-	padding: 6px 10px;
-	width: 700px;
-	border: 1px solid lightgray;
-}
-
-.noticeInsertBox input[type=text]:hover, .noticeInsertBox input[type=text]:focus
-	{
-	outline: none;
-	border-color: #353535
-}
-
-.noticeInsertBox span {
-	display: inline-block;
-	width: 200px;
-}
-
-.noticeInsertBox .noticeBtn {
-	width: 190px;
-	padding: 7px 10px;
-	border: none;
-	background-color: darkgray;
-	color: white;
-	margin-top: 30px;
-}
-
-.noticeInsertBox .noticeBtn:hover {
-	outline: none;
-	background-color: #353535;
-}
-
-.noticeInsertBox .noticeBtn:focus {
-	outline: none;
-}
-
-#writing_name {
-	width: 200px;
-}
+#writing_name {width: 200px;} 
 
 /* noticeBoardListPage.jsp */
-.noticeListBox {
-	width: 1100px;
-	margin-bottom: 50px;
-	margin: 50px auto;
-	text-align: center;
-}
-
-.noticeListBox table {
-	margin: auto;
-	border-collapse: collapse;
-	width: 1100px;
-}
-
-.noticeListBox thead td {
-	background: #EAF2FF;
-}
-
-.noticeListBox td {
-	text-align: center;
-	padding: 10px;
-	border-bottom: 1px solid lightgray;
-}
-
-.noticeListBox tr td:nth-of-type(1) {
-	width: 100px;
-}
-
-.noticeListBox tr td:nth-of-type(2) {
-	width: 500px;
-}
-
-.noticeListBox tr td:nth-of-type(3) {
-	width: 150px;
-}
-
-.noticeListBox tr td:nth-of-type(4) {
-	width: 150px;
-}
-
-.noticeListBox tr td:nth-of-type(5) {
-	width: 100px;
-}
-
-.noticeListBox .noticeInsertBtn {
-	float: right;
-	margin-bottom: 10px;
-	text-decoration: none;
-}
-
-#notice_name {
-	width: 200px;
-}
+.noticeListBox {width: 1100px;margin: 50px auto 100px;text-align: center;}
+.noticeListBox table {margin: auto;border-collapse: collapse;width: 1100px;}
+.noticeListBox thead td {background: #EAF2FF;}
+.noticeListBox td {text-align: center;padding: 10px;border-bottom: 1px solid lightgray;}
+.noticeListBox tr td:nth-of-type(1) {width: 100px;}
+.noticeListBox tr td:nth-of-type(2) {width: 500px;}  
+.noticeListBox tr td:nth-of-type(3) {width: 150px;}
+.noticeListBox tr td:nth-of-type(4) {width: 150px;}
+.noticeListBox tr td:nth-of-type(5) {width: 100px;}
+.noticeListBox tfoot {border-bottom: none;}
+.noticeListBox .noticeInsertBtn {float: right;margin-bottom: 10px;text-decoration: none;}
 
 /* noticeBoardViewPage.jsp */
-.noticeViewBox {
-	width: 1100px;
-	margin-bottom: 50px;
-	margin: 50px auto;
-	text-align: center;
-}
+.noticeViewBox {width: 1000px;margin: 50px auto 100px;text-align: center;}
+.noticeViewBox .headerTable, .contentTable {width: 1000px;border: 2px solid lightgray;border-collapse: collapse;margin: 20px auto;}
+.noticeViewBox .headerTable td {border: 1px solid lightgray;padding: 10px 20px;}
+.noticeViewBox .headerTable tr td:nth-of-type(1) {width: 200px;font-weight: bold;background-color: #EAF2FF}
+.noticeViewBox .headerTable tr td:nth-of-type(3) {width: 200px;font-weight: bold;background-color: #EAF2FF}
+.noticeViewBox .headerTable tr td:nth-of-type(2) {text-align: left;}
+.noticeViewBox .headerTable tr td:nth-of-type(4) {width: 200px;}
+.noticeViewBox .contentTable td {padding: 30px 30px 10px 30px;}
+.noticeViewBox .contentTable tr:nth-of-type(2) td {text-align: left;}
+.noticeViewBox img {width: 100%}
+.noticeViewBox .noticeviewBtn {width: 80px;float: right;background: white;cursor: pointer;padding: 10px;border: 1px solid lightgray;}
 
-.noticeViewBox .headerTable, .contentTable {
-	width: 1000px;
-	border: 2px solid lightgray;
-	border-collapse: collapse;
-	margin: 20px auto;
-}
-
-.noticeViewBox .headerTable td {
-	border: 1px solid lightgray;
-	padding: 10px 20px;
-}
-
-.noticeViewBox .headerTable tr td:nth-of-type(1) {
-	width: 200px;
-	font-weight: bold;
-	background-color: #EAF2FF
-}
-
-.noticeViewBox .headerTable tr td:nth-of-type(3) {
-	width: 200px;
-	font-weight: bold;
-	background-color: #EAF2FF
-}
-
-.noticeViewBox .headerTable tr td:nth-of-type(2) {
-	text-align: left;
-}
-
-.noticeViewBox .headerTable tr td:nth-of-type(4) {
-	width: 200px;
-}
-
-.noticeViewBox .contentTable td {
-	padding: 30px 30px 10px 30px;
-}
-
-.noticeViewBox .contentTable tr:nth-of-type(2) td {
-	text-align: left;
-}
-
-.noticeViewBox img {
-	width: 100%
-}
-
-.noticeViewBox .noticeviewBtn {
-	width: 190px;
-	padding: 7px 10px;
-	border: none;
-	background-color: darkgray;
-	color: white;
-	margin-top: 30px;
-}
-
-.noticeViewBox .noticeviewBtn:hover {
-	outline: none;
-	background-color: #353535;
-}
-
-.noticeViewBox .noticeviewBtn:focus {
-	outline: none;
-}
 
 /* qnaBoardInsertPage.jsp */
-.qnaBoard-insertBox {
-	width: 1100px;
-	margin-bottom: 50px;
-	margin: 50px auto;
-	text-align: center;
-}
-
-.qnaBoard-insertBox table {
-	width: 1100px;
-	margin: 20px auto;
-	border-collapse: collapse;
-}
-
-.qnaBoard-insertBox th, .qnaBoard-insertBox td {
-	border: 1px solid lightgray;
-}
-
-.qnaBoard-insertBox th {
-	background: #EAF2FF;
-	width: 110px;
-}
-
-.qnaBoard-insertBox .title-table tbody tr:nth-of-type(1) input {
-	float: left;
-	padding: 3px;
-	border: 1px solid lightgray;
-}
-
-.qnaBoard-insertBox .title-table tbody tr:nth-of-type(2) input {
-	border: 1px solid lightgray;
-	float: left;
-	padding: 3px;
-	width: 795px;
-}
-
-.qnaBoard-insertBox .content-table tfoot tr th {
-	border: none;
-}
-
-.qnaBoard-insertBox #pass-caption {
-	font-size: 0.8em;
-	color: crimson;
-}
-
-.qnaBoard-insertBox .limited_text_wrap {
-	width: 985px;
-	height: auto;
-	position: relative;
-	display: inline-block;
-}
-
-.qnaBoard-insertBox .limited_text_wrap textarea {
-	border: 1px solid lightgray;
-	width: 100%;
-	resize: none;
-	min-height: 19.5em;
-	line-height: 1.6em;
-	max-height: 13em;
-}
-
-.qnaBoard-insertBox .limited_text_wrap textarea:focus,
-	.qnaBoard-insertBox .title-table tbody tr:nth-of-type(1) input:focus,
-	.qnaBoard-insertBox .title-table tbody tr:nth-of-type(2) input:focus {
-	outline: none;
-	border-color: #353535
-}
-
-.qnaBoard-insertBox .limited_text_wrap span {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
-
-.qnaBoard-insertBox #counter {
-	background: #CCCCCC;
-	border-radius: 5px;
-	padding: 0 5px 0 5px;
-	font-size: 1.35em;
-}
-
-.qnaBoard-insertBox .none {
-	border: none;
-	background: white;
-}
-
-.qnaBoard-insertBox .content-table input {
-	float: right;
-	background: white;
-	cursor: pointer;
-}
-
-.qnaBoard-insertBox .qnaBtn {
-	width: 80px;
-	float: right;
-	background: white;
-	cursor: pointer;
-	padding: 10px;
-	border: 1px solid lightgray;
-}
+.qnaBoard-insertBox {width: 1100px;margin-bottom: 50px;margin: 50px auto;text-align: center;}
+.qnaBoard-insertBox table {width: 1100px;margin: 20px auto;border-collapse: collapse;}
+.qnaBoard-insertBox th, .qnaBoard-insertBox td {border: 1px solid lightgray;}
+.qnaBoard-insertBox th {background: #EAF2FF;width: 110px;}
+.qnaBoard-insertBox .title-table tbody tr:nth-of-type(1) input {float: left;padding: 3px;border: 1px solid lightgray;}
+.qnaBoard-insertBox .title-table tbody tr:nth-of-type(2) input {border: 1px solid lightgray;float: left;padding: 3px;width: 795px;}
+.qnaBoard-insertBox .content-table tfoot tr th {border: none;}
+.qnaBoard-insertBox #pass-caption {font-size: 0.8em;color: crimson;}
+.qnaBoard-insertBox .limited_text_wrap {width: 985px;height: auto;position: relative;display: inline-block;}
+.qnaBoard-insertBox .limited_text_wrap textarea {border: 1px solid lightgray;width: 100%;resize: none;min-height: 19.5em;line-height: 1.6em;max-height: 13em;}
+.qnaBoard-insertBox .limited_text_wrap textarea:focus, .qnaBoard-insertBox .title-table tbody tr:nth-of-type(1) input:focus, .qnaBoard-insertBox .title-table tbody tr:nth-of-type(2) input:focus {	outline: none;	border-color: #353535}
+.qnaBoard-insertBox .limited_text_wrap span {position: absolute;bottom: 10px;right: 10px;}
+.qnaBoard-insertBox #counter {background: #CCCCCC;border-radius: 5px;padding: 0 5px 0 5px;font-size: 1.35em;}
+.qnaBoard-insertBox .none {border: none;background: white;}
+.qnaBoard-insertBox .content-table input {float: right;background: white;cursor: pointer;}
+.qnaBoard-insertBox .qnaBtn {width: 80px;float: right;background: white;cursor: pointer;padding: 10px;border: 1px solid lightgray;}
 
 /* qnaBoardListPage.jsp */
-.qnaBoard-Listbox {
-	width: 1100px;
-	margin-bottom: 50px;
-	margin: 50px auto;
-}
-
-.qnaBoard-Listbox table {
-	margin: auto;
-	border-collapse: collapse;
-	width: 1100px;
-}
-
-.qnaBoard-Listbox thead td {
-	background: #DAE2F0;
-}
-
-.qnaBoard-Listbox td {
-	text-align: center;
-	padding: 10px;
-	border-bottom: 1px solid lightgray;
-}
-
-.qnaBoard-Listbox tr td:nth-of-type(1) {
-	width: 100px;
-}
-
-.qnaBoard-Listbox tr td:nth-of-type(2) {
-	width: 700px;
-}
-
-.qnaBoard-Listbox tr td:nth-of-type(3) {
-	width: 150px;
-}
-
-.qnaBoard-Listbox tr td:nth-of-type(4) {
-	width: 150px;
-}
-
-.qnaBoard-Listbox tfoot input {
-	border: 1px solid lightgray;
-	background: white;
-	padding: 5px;
-	float: right;
-	cursor: pointer;
-}
-
-.qnaBoard-Listbox tfoot tr td {
-	border: none;
-}
-
-.qnaInsertBtn {
-	float: right;
-	margin-bottom: 10px;
-	text-decoration: none;
-}
-
-.tab_wrap {
-	margin: 60px auto;
-	width: 1100px;
-	border: none;
-}
-
-.tab_menu_btn {
-	background: none;
-	border: 0;
-	outline: 0;
-	cursor: pointer;
-}
-
-.tab_menu_container {
-	display: flex;
-}
-
-.tab_menu_btn {
-	width: 275px;
-	height: 60px;
-	ttansition: 0.3s all;
-}
-
-.tab_menu_btn.on {
-	border: 2px solid #7A8290;
-	/* border-bottom: 2px solid #9AA2B0; */
-	font-weight: bold;
-	color: #7A8290;
-}
-
-.tab_menu_btn:hover {
-	color: #7A8290;
-}
-
-.tab_box {
-	background: #DAE2F0;
-	display: none;
-	padding: 20px;
-}
-
-.tab_box.on {
-	display: block;
-}
-
-.tab_box_answer {
-	text-indent: 1em;
-}
-
-.title_btn {
-	paddig: 0;
-	border: none;
-	background: white;
-	cursor: pointer;
-}
-
-.qnaBoard-Listbox input:focus {
-	outline: none;
-}
-
-.qnaBoard-Listbox a:link {
-	text-decoration: none;
-}
-
-.qnaBoard-Listbox a:visited {
-	text-decoration: none;
-}
+.qnaBoard-Listbox {width: 1100px;margin-bottom: 50px;margin: 50px auto;}
+.qnaBoard-Listbox table {margin: auto;border-collapse: collapse;width: 1100px;}
+.qnaBoard-Listbox thead td {background: #DAE2F0;}
+.qnaBoard-Listbox td {text-align: center;padding: 10px;border-bottom: 1px solid lightgray;}
+.qnaBoard-Listbox tr td:nth-of-type(1) {width: 100px;}
+.qnaBoard-Listbox tr td:nth-of-type(2) {width: 700px;}
+.qnaBoard-Listbox tr td:nth-of-type(3) {width: 150px;}
+.qnaBoard-Listbox tr td:nth-of-type(4) {width: 150px;}
+.qnaBoard-Listbox tfoot input {border: 1px solid lightgray;background: white;padding: 5px;float: right;cursor: pointer;}
+.qnaBoard-Listbox tfoot tr td {border: none;}
+.qnaInsertBtn {float: right;margin-bottom: 10px;text-decoration: none;}
+.tab_wrap {margin: 60px auto;width: 1100px;border: none;}
+.tab_menu_btn {	background: none;border: 0;outline: 0;cursor: pointer;}
+.tab_menu_container {display: flex;}
+.tab_menu_btn {width: 275px;height: 60px;ttansition: 0.3s all;}
+.tab_menu_btn.on {border: 2px solid #7A8290;/* border-bottom: 2px solid #9AA2B0; */font-weight: bold;color: #7A8290;}
+.tab_menu_btn:hover {color: #7A8290;}
+.tab_box {background: #DAE2F0;display: none;padding: 20px;}
+.tab_box.on {display: block;}
+.tab_box_answer {text-indent: 1em;}
+.title_btn {paddig: 0;border: none;background: white;cursor: pointer;}
+.qnaBoard-Listbox input:focus {outline: none;}
+.qnaBoard-Listbox a:link {text-decoration: none;}
+.qnaBoard-Listbox a:visited {text-decoration: none;}
 
 /* qnaBoardUpdatePage.jsp */
-.qnaBoardUpdateBox {
-	width: 1100px;
-	margin-bottom: 30px;
-	margin: 50px auto;
-	text-align: center;
-}
-
-.qnaBoardUpdateBox table {
-	width: 1100px;
-	margin: 20px auto;
-	border-collapse: collapse;
-}
-
-.qnaBoardUpdateBox th, .qnaBoardUpdateBox td {
-	border: 1px solid lightgray;
-}
-
-.qnaBoardUpdateBox th {
-	background: #EAF2FF;
-	width: 110px;
-}
-
-.qnaBoardUpdateBox .title-table tbody tr:nth-of-type(1) input {
-	float: left;
-	padding: 3px;
-	width: 300px;
-}
-
-.qnaBoardUpdateBox .title-table tbody tr td {
-	width: 390px;
-}
-
-.qnaBoardUpdateBox .title-table tbody tr:nth-of-type(2) input {
-	float: left;
-	padding: 3px;
-	width: 850px;
-}
-
-.qnaBoardUpdateBox .content-table input {
-	width: 80px;
-	padding: 10px;
-	border: 1px solid lightgray;
-	float: right;
-	background: white;
-	cursor: pointer;
-}
-
-.qnaBoardUpdateBox .content-table tfoot tr th {
-	border: none;
-}
-
-.qnaBoardUpdateBox #pass-caption {
-	font-size: 0.8em;
-	color: crimson;
-}
-
-.qnaBoardUpdateBox .limited_text_wrap {
-	width: 985px;
-	height: auto;
-	position: relative;
-	display: inline-block;
-}
-
-.qnaBoardUpdateBox .limited_text_wrap textarea {
-	width: 100%;
-	resize: none;
-	min-height: 19.5em;
-	line-height: 1.6em;
-	max-height: 13em;
-}
-
-.qnaBoardUpdateBox .limited_text_wrap span {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
-
-.qnaBoardUpdateBox #counter {
-	background: #CCCCCC;
-	border-radius: 5px;
-	padding: 0 5px 0 5px;
-	font-size: 1.35em;
-}
-
-.qnaBoardUpdateBox .none {
-	border: none;
-	background: white;
-}
+.qnaBoardUpdateBox {width: 1100px;margin-bottom: 30px;margin: 50px auto;text-align: center;}
+.qnaBoardUpdateBox table {width: 1100px;margin: 20px auto;border-collapse: collapse;}
+.qnaBoardUpdateBox th, .qnaBoardUpdateBox td {border: 1px solid lightgray;}
+.qnaBoardUpdateBox th {background: #EAF2FF;	width: 110px;}
+.qnaBoardUpdateBox .title-table tbody tr:nth-of-type(1) input {float: left;padding: 3px;width: 300px;}
+.qnaBoardUpdateBox .title-table tbody tr td {width: 390px;}
+.qnaBoardUpdateBox .title-table tbody tr:nth-of-type(2) input {float: left;padding: 3px;width: 850px;}
+.qnaBoardUpdateBox .content-table input {width: 80px;padding: 10px;border: 1px solid lightgray;float: right;background: white;cursor: pointer;}
+.qnaBoardUpdateBox .content-table tfoot tr th {border: none;}
+.qnaBoardUpdateBox #pass-caption {font-size: 0.8em;color: crimson;}
+.qnaBoardUpdateBox .limited_text_wrap {	width: 985px;height: auto;position: relative;display: inline-block;}
+.qnaBoardUpdateBox .limited_text_wrap textarea {width: 100%;resize: none;min-height: 19.5em;line-height: 1.6em;max-height: 13em;}
+.qnaBoardUpdateBox .limited_text_wrap span {position: absolute;bottom: 10px;right: 10px;}
+.qnaBoardUpdateBox #counter {background: #CCCCCC;border-radius: 5px;padding: 0 5px 0 5px;font-size: 1.35em;}
+.qnaBoardUpdateBox .none {border: none;background: white;}
 
 /* qnaBoardViewPage.jsp */
-.qnaBoard-viewBox {
-	width: 1100px;
-	margin-bottom: 20px;
-	margin: 50px auto;
-	text-align: center;
-}
+.qnaBoard-viewBox {width: 1100px;margin-bottom: 20px;margin: 50px auto;text-align: center;}
+.qnaBoard-viewBox table {width: 1100px;margin: 20px auto;border-collapse: collapse;}
+.qnaBoard-viewBox th, .qnaBoard-viewBox td {border: 1px solid lightgray;}
+.qnaBoard-viewBox th {background: #EAF2FF;width: 110px;}
+.qnaBoard-viewBox .title-table th, .qnaBoard-viewBox .title-table td {padding: 5px;}
+.qnaBoard-viewBox .title-table td {text-align: left;}
+.qnaBoard-viewBox .title-table tbody tr:nth-of-type(1) input {float: left;padding: 3px;width: 300px;}
+.qnaBoard-viewBox .title-table tbody tr:nth-of-type(2) input {float: left;padding: 3px;width: 795px;}
+.qnaBoard-viewBox .content-table {height: 500px;}
+.qnaBoard-viewBox .content-table tbody tr td {text-align: left;white-space: pre-line;}
+.qnaBoard-viewBox .content-table tfoot tr td {border: none;}
+.qnaBoard-viewBox .content-table .qnaBtn {float: right;background: white;cursor: pointer;padding: 10px;width: 67px;border: 1px solid lightgray;}
+.BoardReply-insertBox {margin: 0 auto;width: 1100px;text-align: center;}
+.reply-insertBox {width: 1100px;}
+.reply-insertBox th {width: 110px;background: #EAF2FF;}
+.reply-insertTable {margin: 0 auto;width: 1100px;}
+.reply-insertTable th, .reply-insertTable td {border: 1px solid lightgray;}
+.reply-insertTable td:nth-of-type(2) {border: none;}
+.reply-insertTable input {width: 80px;padding: 5px;border: 1px solid lightgray;background: white;cursor: pointer;}
+.reply-insertTable tr:nth-of-type(2) td {height: 10px;border: none;}
+.reply-insertTable tr:nth-of-type(2) td input {height: 100%;}
+.limited_text_wrap1 {width: 990px;height: auto;position: relative;display: inline-block;}
+.limited_text_wrap1 textarea {width: 100%;resize: none;min-height: 9.5em;line-height: 1.6em;max-height: 9em;}
+.limited_text_wrap1 span {position: absolute;bottom: 10px;right: 10px;}
+#counter1 {border-radius: 5px;padding: 0 5px 0 5px;font-size: 1.35em;}
+.BoardReply-viewBox {margin: 0 auto;width: 1100px;margin-bottom: 50px;}
+.reply-viewTable {margin: 0 auto;width: 1100px;}
+.reply-viewTable th, .reply-viewTable td {border: 1px solid lightgray;}
+.reply-viewTable input:nth-of-type(1) {padding: 10px;border: 1px solid lightgray;background: white;}
+.reply-viewTable input:nth-of-type(2) {padding: 10px;border: 1px solid lightgray;background: white;}
+.reply-viewTable tr td:nth-of-type(1) {width: 100px;text-align: center;font-weight: bold;background: #EAF2FF;}
+.reply-viewTable tr td:nth-of-type(2) {width: 860px;}
+.reply-viewTable tr td:nth-of-type(3) {width: 70px;}
+.reply-viewTable tr td:nth-of-type(4) {background: aqua;width: 70px;white-space: pre-line;}
+.hidden-row {border: none;background: white;}
 
-.qnaBoard-viewBox table {
-	width: 1100px;
-	margin: 20px auto;
-	border-collapse: collapse;
-}
+/* ReviewBoardInsertPage.jsp */
+	
+.rating { border: none;float: left;}
+.rating > input { display: none; } 
+.rating > label:before {margin: 5px;font-size: 1.25em;font-family: FontAwesome;display: inline-block;content: "\f005";}
+.rating > .half:before {content: "\f089";position: absolute;}
+.rating > label { color: #ddd;float: right;}
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
-.qnaBoard-viewBox th, .qnaBoard-viewBox td {
-	border: 1px solid lightgray;
-}
-
-.qnaBoard-viewBox th {
-	background: #EAF2FF;
-	width: 110px;
-}
-
-.qnaBoard-viewBox .title-table th, .qnaBoard-viewBox .title-table td {
-	padding: 5px;
-}
-
-.qnaBoard-viewBox .title-table td {
-	text-align: left;
-}
-
-.qnaBoard-viewBox .title-table tbody tr:nth-of-type(1) input {
-	float: left;
-	padding: 3px;
-	width: 300px;
-}
-
-.qnaBoard-viewBox .title-table tbody tr:nth-of-type(2) input {
-	float: left;
-	padding: 3px;
-	width: 795px;
-}
-
-.qnaBoard-viewBox .content-table {
-	height: 500px;
-}
-
-.qnaBoard-viewBox .content-table tbody tr td {
-	text-align: left;
-	white-space: pre-line;
-}
-
-.qnaBoard-viewBox .content-table tfoot tr td {
-	border: none;
-}
-
-.qnaBoard-viewBox .content-table .qnaBtn {
-	float: right;
-	background: white;
-	cursor: pointer;
-	padding: 10px;
-	width: 67px;
-	border: 1px solid lightgray;
-}
-
-.qnaBoardReply-insertBox {
-	margin: 0 auto;
-	width: 1100px;
-	text-align: center;
-}
-
-.reply-insertBox {
-	width: 1100px;
-}
-
-.reply-insertBox th {
-	width: 110px;
-	background: #EAF2FF;
-}
-
-.reply-insertTable {
-	margin: 0 auto;
-	width: 1100px;
-}
-
-.reply-insertTable th, .reply-insertTable td {
-	border: 1px solid lightgray;
-}
-
-.reply-insertTable td:nth-of-type(2) {
-	border: none;
-}
-
-.reply-insertTable input {
-	width: 80px;
-	padding: 5px;
-	border: 1px solid lightgray;
-	background: white;
-	cursor: pointer;
-}
-
-.reply-insertTable tr:nth-of-type(2) td {
-	height: 10px;
-	border: none;
-}
-
-.reply-insertTable tr:nth-of-type(2) td input {
-	height: 100%;
-}
-
-.limited_text_wrap1 {
-	width: 990px;
-	height: auto;
-	position: relative;
-	display: inline-block;
-}
-
-.limited_text_wrap1 textarea {
-	width: 100%;
-	resize: none;
-	min-height: 9.5em;
-	line-height: 1.6em;
-	max-height: 9em;
-}
-
-.limited_text_wrap1 span {
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
-}
-
-#counter1 {
-	border-radius: 5px;
-	padding: 0 5px 0 5px;
-	font-size: 1.35em;
-}
-
-.qnaBoardReply-viewBox {
-	margin: 0 auto;
-	width: 1100px;
-	margin-bottom: 50px;
-}
-
-.reply-viewTable {
-	margin: 0 auto;
-	width: 1100px;
-}
-
-.reply-viewTable th, .reply-viewTable td {
-	border: 1px solid lightgray;
-}
-
-.reply-viewTable input:nth-of-type(1) {
-	padding: 10px;
-	border: 1px solid lightgray;
-	background: white;
-}
-
-.reply-viewTable input:nth-of-type(2) {
-	padding: 10px;
-	border: 1px solid lightgray;
-	background: white;
-}
-
-.reply-viewTable tr td:nth-of-type(1) {
-	width: 100px;
-	text-align: center;
-	font-weight: bold;
-	background: #EAF2FF;
-}
-
-.reply-viewTable tr td:nth-of-type(2) {
-	width: 860px;
-}
-
-.reply-viewTable tr td:nth-of-type(3) {
-	width: 70px;
-}
-
-.reply-viewTable tr td:nth-of-type(4) {
-	background: aqua;
-	width: 70px;
-	white-space: pre-line;
-}
-
-.hidden-row {
-	border: none;
-	background: white;
-}
+.reviewView-box{width: 1100px;margin-bottom: 50px;margin: 200px auto;text-align: center;}
+.reviewView-box #reviewView-table{width: 1100px;margin: 5px auto;border-collapse: collapse;}
+.reviewView-box #reviewView-table td{border: 1px solid lightgray;padding: 10px 20px;}
+.reviewView-box tr td:nth-of-type(1) {width: 200px;}
+.reviewView-box #reviewView-table tr td:nth-of-type(1) {width: 200px; font-weight: bold;background: #EAF2FF;}
+.reviewView-box #reviewView-table tr td:nth-of-type(3) {width: 200px; font-weight: bold;background: #EAF2FF;}
+.reviewView-box #reviewView-table tr td:nth-of-type(2), .reviewView-box #reviewView-table tr td:nth-of-type(4) {text-align: left;}
+.reviewView-box #review-img {width: 300px;height: 250px;}
+.reviewView-box .reviewBtn {width: 80px;  float: right;background: white; cursor: pointer; padding: 10px;border: 1px solid lightgray;}
+	

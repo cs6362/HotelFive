@@ -3,26 +3,25 @@
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<style>
-<!--
-
-.backimg {
-	width: 100%;
-	height: 750px;
-	background-size: cover;
-	background-image: url("resources/assets/background_img/hotel.jpg");
-	text-align: center;
-	color: white;
-	padding-top: 300px;
-}
--->
-</style>
 
 <!-- 동적인 페이지 포함 -->
 <jsp:include page="/WEB-INF/views/template/header.jsp">
 	<jsp:param value="객실소개" name="title" />
 </jsp:include>
 
+<style>
+	
+	.backimg {
+		width: 100%;
+		height: 750px;
+		background-size: cover;
+		background-image: url("resources/assets/background_img/hotel.jpg");
+		text-align: center;
+		color: white;
+		padding-top: 300px;
+	}
+
+</style>
 <!-- roomInfo 리스트 페이지  -->
 <div class="backimg">
 	<h3 id="hotelfive">Hotel Five</h3>
