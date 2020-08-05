@@ -9,18 +9,6 @@
 	<jsp:param value="객실검색" name="title" />
 </jsp:include>
 
-<style type="text/css">
-.bookableList_backimg {
-	width: 100%;
-	height: 750px;
-	background-size: cover;
-	background-image:
-		url("resources/assets/background_img/clock-691143_640.jpg");
-	text-align: center;
-	color: white;
-	padding-top: 300px;
-}
-</style>
 
 <div class="bookableList_backimg">
 	<h3 id="hotelfive">Hotel Five</h3>

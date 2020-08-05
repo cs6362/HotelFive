@@ -6,18 +6,7 @@
 
 <!-- 동적인 페이지 포함 -->
 <jsp:include page="/WEB-INF/views/template/header.jsp" />
-<style type="text/css">
-.bookableList_backimg {
-	width: 100%;
-	height: 750px;
-	background-size: cover;
-	background-image:
-		url("resources/assets/background_img/clock-691143_640.jpg");
-	text-align: center;
-	color: white;
-	padding-top: 300px;
-}
-</style>
+
 <div class="findReservationBox">
 
 	<div class="bookableList_backimg">

@@ -294,3 +294,17 @@ body {
 #roominfo {
 	width: 200px;
 }
+.pop-up-close {border: none;position: absolute;top: -20.5px;right: -20px;width: 40px;height: 41px;text-indent: -9999px;background-color: transparent;background-image: url(../x-button.png);background-repeat: no-repeat;background-size: 100%;background-position: center;}
+
+#myVideo {position: fixed;right: 0;bottom: 0;min-width: 100%;min-height: 100%;}
+.reservation-box {position: fixed;display: inline-block;border: 1px solid black;padding: 5px;background:black;top: 60%;left: 25%;width: 50%;}
+.reservation-box-form{background : white;width : 100%;margin : 0;display: flex;}
+.footer-wrap {position: fixed;bottom: 0;}
+#reservation-box-checkIn-div{width: 40%;}
+#reservation-box-checkOut-div{width: 40%;}
+#reservation-box-selectBtn-div{width: 20%; text-align: center;}
+#reservation-box-checkIn{width : 100%;border : none;text-align: center;font-size: 16px;}
+#reservation-box-checkOut{width : 100%;border : none;text-align: center;font-size: 16px;}
+#reservation-box-checkIn:focus{outline : none;}
+#reservation-box-checkOut:focus{outline : none;}
+#reservation-box-selectBtn{border : none;margin : auto;width:  100%;height: 100%;background: black;color : white;}

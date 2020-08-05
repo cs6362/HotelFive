@@ -4,21 +4,10 @@
 <jsp:include page="/WEB-INF/views/template/header.jsp">
 	<jsp:param value="게시판" name="title" />
 </jsp:include>
-<style type="text/css">
-	.review_backimg 
-	{
-		width: 100%; 
-		height: 750px; 
-		background-size: cover;
-		background-image: url("resources/assets/background_img/backimg.jpg"); 
-		text-align: center; 
-		color: white; 
-		padding-top: 300px;
-	}
-</style>
 
 
-<div class="review_backimg">
+
+<div class="board_backimg">
 	<h3 id="hotelfive">Hotel Five</h3>
 	<h1 id="pagetitle">Community</h1>
 	<p id="explain">호텔파이브에서 보낸 이용후기</p>

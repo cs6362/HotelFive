@@ -4,28 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.*, java.text.*"  %>
 
-
-<style>
-   tr, td {text-align: center;}
-   .confirmBtn, .cancelBtn{
-	  background-color: #4CAF50; /* Green */
-	  border: none;
-	  color: white;
-	  padding: 5px 10px;
-	  text-align: center;
-	  text-decoration: none;
-	  font-size: 13px;
-	  cursor: pointer;
-	}
-	
-	.container { margin-bottom: 200px;}
-	.confirmBtn:hover { background-color: #3e8e41; }
-	.cancelBtn:hover{ background-color: #3e8e41; }
-</style>
-
 <script>
    
-   // var today = 1;
 
    function fn_reservationCancle(f){
       
@@ -34,42 +14,17 @@
          f.submit();
       }
    }
-	// 예약 취소하기
-	function fn_ReservationCancel(f){
-		swal({
-			  title: "정말로 예약을 취소하시겠습니까?",
-			  text: "",
-			  icon: "warning",
-			  buttons: true,
-			  dangerMode: true,
-			})
-			.then((willDelete) => {
-			  if (willDelete) {
-			    swal("예약이 취소되었습니다", {
-			      icon: "success",
-			    });
-			    setTimeout(function(){
-			    	f.action = 'reservationCancle';
-					f.submit();
-			    }, 1000);
-			  } else {
-			    swal("취소하였습니다");
-			  }
-		});
-	}
-   
 </script>
 <!-- 동적인 페이지 포함 -->
 <jsp:include page="/WEB-INF/views/template/header.jsp">
 	<jsp:param value="나의예약현황" name="title"/>
 </jsp:include>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><!-- alert 꾸미기 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
 <br><br><br><br><br><br><br><br><br><br>
 
-   <div class="container">
+   <div class="myReservation-container">
    	 <h3 class="text-center">${loginDTO.mName } 님 예약내역</h3>
    	 <br>
    	 <table class="table table-hover">
@@ -105,10 +60,10 @@
 				              	<td>
 									<input type="hidden" name="rNo" value="${rDTO.rNo }">
 									<input type="hidden" name="mNo" value="${rDTO.mNo }">
-									<input class="cancelBtn" type="button" value="예약대기" disabled>
+									<input class="myReservation-cancelBtn" type="button" value="예약대기" disabled>
 								</td>
 								<td>
-									<input class="cancelBtn" type="button" value="예약취소" onclick="fn_ReservationCancel(this.form)">
+									<input class="myReservation-cancelBtn" type="button" value="예약취소" onclick="fn_reservationCancle(this.form)">
 								</td>
 							</c:if>
 							<c:if test="${rDTO.rApproval eq 1}"> <!-- 승인완료 -->
@@ -118,7 +73,7 @@
 				              	<td>${rDTO.rCheckIn }</td>
 				              	<td>${rDTO.rCheckOut }</td>
 				              	<td>${rDTO.gName }</td>
-				              	<td><input class="cancelBtn" type="button" value="예약확정" disabled></td>
+				              	<td><input class="myReservation-cancelBtn" type="button" value="예약확정" disabled></td>
 								<td>
 									
 								</td>

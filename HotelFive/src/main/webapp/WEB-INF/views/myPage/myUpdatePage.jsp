@@ -7,9 +7,6 @@
 <jsp:include page="/WEB-INF/views/template/header.jsp">
 	<jsp:param value="회원정보수정" name="title"/>
 </jsp:include>
-
-
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
@@ -256,7 +253,7 @@ function findZipCodeBtn() {
       text-align: center;
    }
 	
-.myPage_update-box .update-box #update-table {width: 880px; padding: 20px 10px;  margin: auto; text-align: center; border-collapse: collapse; background-color: #F2F2F2}
+	.myPage_update-box .update-box #update-table {width: 880px; padding: 20px 10px;  margin: auto; text-align: center; border-collapse: collapse; background-color: #F2F2F2}
    .myPage_update-box .update-box #update-table input[type=text], .myPage-update-box .update-box #update-table input[type=password] {width: 450px; padding: 7px 10px; border: 1px solid lightgray;  }
    .myPage_update-box .update-box #update-table input[type=text]:hover, .myPage-update-box .update-box #update-table input[type=password]:hover,.myPage-update-box .update-box #update-table input[type=text]:focus, .myPage-update-box .update-box #update-table input[type=password]:focus {outline: none; border-color: #353535}
    .myPage_update-box .update-box #update-table td:nth-of-type(1) {font-weight: bold; width: 230px; font-size: 13px; color: #353535;}
@@ -265,6 +262,7 @@ function findZipCodeBtn() {
    .myPage_update-box .update-box #update-table input[type=button]:hover, .myPage-update-box .update-box #update-table input[type=button]:focus {outline: none; }
    .myPage_update-box #signUpBtn, .myPage-update-box #clearBtn {width: 190px; padding: 7px 10px; border: none; background-color: darkgray; color:white; margin-top: 30px;}
    .myPage_update-box #signUpBtn:hover, .myPage-update-box #clearBtn:hover, .myPage-update-box #signUpBtn:focus, .myPage-update-box #clearBtn:focus {outline: none; background-color: #353535;}
+	
 	#span-mId {
 		font-size: 20px; 
 		font-weight: bold;

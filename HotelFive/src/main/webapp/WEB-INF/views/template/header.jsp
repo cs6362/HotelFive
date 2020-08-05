@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="resources/style/admin.css">
 <link rel="stylesheet" href="resources/style/board.css">
 <link rel="stylesheet" href="resources/style/login.css">
+<link rel="stylesheet" href="resources/style/mypage.css">
 <script
 	src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script
@@ -189,22 +190,6 @@
 		return unescape(cookieValue);
 	}
 </script>
-<style>
-.pop-up-close {
-	border: none;
-	position: absolute;
-	top: -20.5px;
-	right: -20px;
-	width: 40px;
-	height: 41px;
-	text-indent: -9999px;
-	background-color: transparent;
-	background-image: url(resources/x-button.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-}
-</style>
 </head>
 <body>
 	<div class="header-wrap">

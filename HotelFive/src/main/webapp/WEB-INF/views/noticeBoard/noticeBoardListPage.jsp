@@ -9,18 +9,6 @@
 	<jsp:param value="공지사항" name="title"/>
 </jsp:include>
 
-<style type="text/css">
-	.notice_backimg {
-		width: 100%; 
-		height: 750px; 
-		background-size: cover;
-		background-image: url("resources/assets/background_img/backimg.jpg"); 
-		text-align: center; 
-		color: white; 
-		padding-top: 300px;
-	}
-</style>
-
 <script type="text/javascript">
 	var beInserted = '${beInserted}';
 	if (beInserted == 'true') {
@@ -33,7 +21,7 @@
 	}
 </script>
 
-<div class="notice_backimg">
+<div class="board_backimg">
 	<h3 id="hotelfive">Hotel Five</h3>
 	<h1 id="pagetitle">Community</h1>
 	<p id="explain">호텔파이브의 각종 이벤트 및 소식</p>

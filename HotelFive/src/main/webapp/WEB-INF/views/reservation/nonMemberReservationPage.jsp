@@ -4,18 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page import="java.util.*, java.text.*"%>
 
-<style>
-.bookableList_backimg {
-	width: 100%;
-	height: 750px;
-	background-size: cover;
-	background-image:
-		url("resources/assets/background_img/clock-691143_640.jpg");
-	text-align: center;
-	color: white;
-	padding-top: 300px;
-}
-</style>
+
 <script>
 	function fn_reservationCancle(f) {
 

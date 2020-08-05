@@ -9,21 +9,9 @@
 	<jsp:param value="객실소개" name="title" />
 </jsp:include>
 
-<style>
-	
-	.backimg {
-		width: 100%;
-		height: 750px;
-		background-size: cover;
-		background-image: url("resources/assets/background_img/hotel.jpg");
-		text-align: center;
-		color: white;
-		padding-top: 300px;
-	}
 
-</style>
 <!-- roomInfo 리스트 페이지  -->
-<div class="backimg">
+<div class="roomList-backimg">
 	<h3 id="hotelfive">Hotel Five</h3>
 	<h1 id="pagetitle">Preview Rooms</h1>
 	<p id="explain">호텔파이브만의 감성을 추구하는 호텔파이브의 객실</p>

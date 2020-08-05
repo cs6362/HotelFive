@@ -20,7 +20,5 @@
 	<input type="button" value="질문하러가기" onclick="fn_qnaBoardList(this.form)"/>
 </form>
 
-
-
 <!-- 정적인 페이지 포함 -->
 <%@ include file="/WEB-INF/views/template/footer.jsp" %>
