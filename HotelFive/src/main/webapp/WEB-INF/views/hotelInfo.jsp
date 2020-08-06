@@ -8,14 +8,6 @@
 <jsp:include page="/WEB-INF/views/template/header.jsp" />
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9670de9e24cc14ddf9de970d284212ba&libraries=LIBRARY"></script>
 
-<style type="text/css" >
-	.bgimg {
-	background-position: center;
-	background-size: cover;
-	background-image: url("resources/assets/aboutUs_img/hotel.jpg");
-	min-height: 750px;
-}
-</style>
 
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
 	<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">

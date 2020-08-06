@@ -14,7 +14,7 @@
    #changePwBtn {width: 190px; padding: 7px 10px; border: none; background-color: darkgray; color:white; margin-top: 30px;}
    #changePwBtn:hover {outline: none; background-color: #353535;}
    
-   .find-id-box {width: 1000px; margin: 250px auto 50px; }
+   .find-id-box {width: 1000px; margin: 300px auto 50px; }
    .find-id-box #bold {font-weight: bold; font-size: 14px;}
    .find-id-box #nobold{font-size: 12px; margin: 0;}
    .find-id-box #tableon {font-size: 12px; font-weight: bold; color: gray; padding-left: 10px;}

@@ -1,169 +1,29 @@
 @charset "UTF-8";
 
 /* adminListPage.jsp, adminReservationListPage.jsp */
-.container {
-	padding-top: 250px;
-	padding-bottom: 100px;
-	text-align: center;
-}
-
-.queryBtn {
-	width: 70px;
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 7px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 15px;
-	cursor: pointer;
-	border-radius: 4px;
-}
-
-.table-hover tr, .table-hover th {
-	text-align: center;
-}
-
-.text-center select {
-	width: 140px;
-	padding: .6em .3em;
-	font-family: inherit;
-	background:
-		url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
-		no-repeat 95% 50%;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	border: 1px solid #999;
-	border-radius: 0px;
-}
-
-.text-center select::-ms-expand {
-	/* for IE 11 */
-	display: none;
-}
-
-.queryInput {
-	height: 40px;
-	border-radius: 3px;
-}
-
-.Btn { /* 버튼 : 회원추가, 전체회원 리스트 */
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 10px 24px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	transition-duration: 0.4s;
-	cursor: pointer;
-}
-
-.btnAdd, .btnTotalList {
-	background-color: white;
-	color: black;
-	border: 2px solid #4CAF50;
-}
-
-.btnAdd:hover, .btnTotalList:hover {
-	background-color: #4CAF50;
-	color: white;
-}
-
-.confirmBtn, .cancelBtn {
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 5px 10px;
-	text-align: center;
-	text-decoration: none;
-	font-size: 13px;
-	cursor: pointer;
-}
-
-.confirmBtn:hover, .cancelBtn:hover, .confirmBtn:focus, .cancelBtn:focus
-	{
-	background-color: #3e8e41;
-	outline: none;
-}
-
+.container {padding-top: 250px;padding-bottom: 100px;text-align: center;}
+.queryBtn {width: 70px;background-color: #4CAF50; /* Green */border: none;color: white;padding: 7px;text-align: center;text-decoration: none;display: inline-block;font-size: 15px;cursor: pointer;border-radius: 4px;}
+.table-hover tr, .table-hover th {text-align: center;}
+.text-center select {width: 140px;padding: .6em .3em;font-family: inherit;background:url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)	no-repeat 95% 50%;	-webkit-appearance: none;-moz-appearance: none;appearance: none;border: 1px solid #999;border-radius: 0px;}
+.text-center select::-ms-expand {/* for IE 11 */display: none;}
+.queryInput {height: 40px;border-radius: 3px;}
+.Btn { /* 버튼 : 회원추가, 전체회원 리스트 */background-color: #4CAF50; /* Green */border: none;color: white;padding: 10px 24px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;transition-duration: 0.4s;cursor: pointer;}
+.btnAdd, .btnTotalList {background-color: white;color: black;border: 2px solid #4CAF50;}
+.btnAdd:hover, .btnTotalList:hover {background-color: #4CAF50;color: white;}
+.confirmBtn, .cancelBtn {background-color: #4CAF50; /* Green */border: none;color: white;padding: 5px 10px;text-align: center;text-decoration: none;font-size: 13px;cursor: pointer;}
+.confirmBtn:hover, .cancelBtn:hover, .confirmBtn:focus, .cancelBtn:focus{background-color: #3e8e41;outline: none;}
 /* adminMain.jsp */
-.adminMain-wrap {
-	height: 800px;
-	background-color: #E2E2E2;
-	padding-top: 300px;
-}
-
-.group-btn {
-	text-align: center;
-}
-
-.adminMainBtn {
-	display: inline-block;
-	padding: 15px 25px;
-	font-size: 24px;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	outline: none;
-	color: #fff;
-	background-color: #4CAF50;
-	border: none;
-	border-radius: 15px;
-	box-shadow: 0 9px #999;
-	margin: 0 20px;
-}
-
-.adminMainBtn:hover {
-	background-color: #3e8e41
-}
-
-.adminMainBtn:active {
-	background-color: #3e8e41;
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
-}
-
+.adminMain-wrap {height: 800px;background-color: #E2E2E2;padding-top: 300px;}
+.group-btn {text-align: center;}
+.adminMainBtn {display: inline-block;padding: 15px 25px;font-size: 24px;cursor: pointer;text-align: center;text-decoration: none;outline: none;color: #fff;background-color: #4CAF50;border: none;border-radius: 15px;box-shadow: 0 9px #999;margin: 0 20px;}
+.adminMainBtn:hover {background-color: #3e8e41}
+.adminMainBtn:active {background-color: #3e8e41;box-shadow: 0 5px #666;transform: translateY(4px);}
 /* adminViewPage.jsp */
-.admin-view-box {
-	width: 800px;
-	margin: auto;
-}
-
-.admin-view-box table {
-	border-collapse: collapse;
-	width: 600px;
-	margin: auto;
-}
-
-.admin-view-box table td {
-	border: 1px solid black;
-	padding: 5px;
-}
-
-.admin-view-box table tbody td:nth-of-type(1) {
-	width: 300px;
-	text-align: left;
-}
-
-.admin-view-box table tbody td:nth-of-type(2) {
-	width: 100px;
-}
-
-.admin-view-box table tbody td:nth-of-type(3) {
-	width: 100px;
-}
-
-.admin-view-box table tbody td:nth-of-type(4) {
-	width: 70px;
-}
-
-.admin-view-box table tbody thead tr:nth-of-type(1) {
-	text-align: center;
-	font-weight: bold;
-	background-color: teal;
-}
+.admin-view-box {width: 800px;margin: auto;}
+.admin-view-box table {border-collapse: collapse;width: 600px;margin: auto;}
+.admin-view-box table td {border: 1px solid black;padding: 5px;}
+.admin-view-box table tbody td:nth-of-type(1) {width: 300px;	text-align: left;}
+.admin-view-box table tbody td:nth-of-type(2) {width: 100px;}
+.admin-view-box table tbody td:nth-of-type(3) {width: 100px;}
+.admin-view-box table tbody td:nth-of-type(4) {width: 70px;}
+.admin-view-box table tbody thead tr:nth-of-type(1) {text-align: center;font-weight: bold;background-color: teal;}
