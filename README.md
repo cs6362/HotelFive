@@ -17,7 +17,7 @@
   - Framework/flatform : Spring, bootstrap, jQuery, mybatis
   - Programing Language : JAVA, HTML, JavaScript
   - Tool : STS, Github, Aquerytool, SQL Developer
-  - API : recaptcha, Kakao Developer
+  - API : captcha, Kakao Developer
   
 ## 내용 
 
@@ -30,7 +30,7 @@
   - 상품 관리 ( 객실 목록, 객실 상세정보 )
   - 예약 ( 캘린더 구현, 회원 예약, 비회원 예약, 날짜별 가능한 객실조회 )
   - 메인화면 ( 간편 객실 조회, 주요 기능 네비게이션 ) 
-  - 보안 ( JavaMail, recaptcha ) 
+  - 보안 ( JavaMail, captcha ) 
   
 + 담당파트 
   
