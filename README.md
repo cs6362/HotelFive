@@ -49,5 +49,26 @@
 ## 결과
 
 + DB설계 
-  ![dbmapjpg](https://user-images.githubusercontent.com/67767127/105947501-8eb80c80-60ac-11eb-8893-6e76a047e7fe.jpg)
+  - ![dbmapjpg](https://user-images.githubusercontent.com/67767127/105947501-8eb80c80-60ac-11eb-8893-6e76a047e7fe.jpg)
+  
++ 회원가입
+  -
+  
++ 로그인
+  -
+  
++ 보안
+  -
+  
++ 캘린더 구현
+  -
+  
++ 회원 예약
+  -
+  
++ 비회원 예약
+  -
+  
++ 날짜별 가능한 객실 조회
+  -
 
