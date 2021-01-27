@@ -46,5 +46,8 @@
    
 
 
-## 개발 구현 
--------------
+## 결과
+
++ DB설계 
+![dbmapjpg](https://user-images.githubusercontent.com/67767127/105947501-8eb80c80-60ac-11eb-8893-6e76a047e7fe.jpg)
+
