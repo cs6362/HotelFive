@@ -49,7 +49,7 @@
 ## 결과
 
 + DB설계 
-  ![dbmapjpg](https://user-images.githubusercontent.com/67767127/105947501-8eb80c80-60ac-11eb-8893-6e76a047e7fe.jpg)
+  <li>![dbmapjpg](https://user-images.githubusercontent.com/67767127/105947501-8eb80c80-60ac-11eb-8893-6e76a047e7fe.jpg)</li>
   
 + 회원가입
   <img src="https://user-images.githubusercontent.com/67767127/105949103-81e8e800-60af-11eb-8bab-12bcb04fd3b5.PNG"  width="700" height="370">
