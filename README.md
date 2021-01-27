@@ -51,5 +51,7 @@
 -----------
 ## 박용운 
 + 담당 핵심코드 및 스토리라인
-  - <Link>https://docs.google.com/presentation/d/1XJf7vrSb2COqf3V5_xECIkIIUmgdIqweF49cF6sVc6s/edit?usp=sharing
+  - 회원가입
+    -![회원가입1](https://user-images.githubusercontent.com/67767127/105963025-d4340400-60c3-11eb-96fb-f76083812681.PNG)
+
   
