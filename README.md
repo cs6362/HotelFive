@@ -69,17 +69,20 @@
 + 로그인
 
   ![로그인1](https://user-images.githubusercontent.com/67767127/105966890-8f5e9c00-60c8-11eb-9092-71bcc498e9ce.PNG)
-  설명
+  네비게이션의 로그인 이미지 버튼을 누르면 captcha 이미지를 Ajax 통신을 통해 가져온다. ( 새로고침과 동일 통신 ) 
+
+// 아약스 통신을 통해 캡차 이미지를 가져오는데, 이때 JSON데이터를 가져오게 되요. 이미지캡차 커맨드를 통해서, 캡차 이미지를 호출해주고, 동시에 모델에 저장을 해줘요. 파일네임을 맵형식으로 JSON 통신을 준비해줍니다.
   ![로그인2](https://user-images.githubusercontent.com/67767127/105966893-908fc900-60c8-11eb-862a-09f757595675.PNG)
+  아이디 기억하기 체크박스를 체크 할 경우 아이디 값을 쿠키에 올려 저장 할 수 있도록 한다. ( 7일간 저장 )
   설명
   ![로그인3](https://user-images.githubusercontent.com/67767127/105966899-92598c80-60c8-11eb-9108-4851e93813d2.PNG)
-  설명
+  아이디 비밀번호를 입력한 후 captcha 이미지에 보이는 인증코드를 입력 로그인 버튼을 누르면 Ajax 통신을 이용하여 인증코드를 확인하는 checkCaptchar 메소드를 호출후 readBody 함수를 통해 입력한 캡차 값의 일치 여부가 Boolean 타입으로 돌아오는데 인증코드가 일치하지 않을 경우 인증코드가 다르다는 alert문을 생성한 후 getReImg 함수가 작동하여 새로운 captchar 이미지를 가져온다. 
   ![로그인4](https://user-images.githubusercontent.com/67767127/105971685-2548f580-60ce-11eb-9ccc-6b22eaf1437b.PNG)
-  설명
+  아이디 값과 비밀번호 값을 database의 data와 비교하여 해당 data가 있을 경우 회원의 data를 session에 올려준다. 
 
 + 예약 
   ![예약1](https://user-images.githubusercontent.com/67767127/105971270-ad7acb00-60cd-11eb-9a9d-5e5251d639d5.PNG)
-  설명
+  달력에서 예약하고 싶은 날짜의 숫자를 체크인, 체크아웃 순서대로 누른 후 검색 버튼을 누르면 미리 설정한 SQL 문을 통해 체크인, 체크아웃 기간안에 예약이 되어있지 않은 객실정보가 넘어온다. 
   ![예약2](https://user-images.githubusercontent.com/67767127/105971275-aeabf800-60cd-11eb-84c2-7965e13743f2.PNG)
   설명
   ![예약3](https://user-images.githubusercontent.com/67767127/105971277-af448e80-60cd-11eb-90fe-befb369b0af7.PNG)
