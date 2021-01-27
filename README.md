@@ -78,6 +78,14 @@
   설명
 
 + 예약 
-
+  ![예약1](https://user-images.githubusercontent.com/67767127/105971270-ad7acb00-60cd-11eb-9a9d-5e5251d639d5.PNG)
   설명
-  
+  ![예약2](https://user-images.githubusercontent.com/67767127/105971275-aeabf800-60cd-11eb-84c2-7965e13743f2.PNG)
+  설명
+  ![예약3](https://user-images.githubusercontent.com/67767127/105971277-af448e80-60cd-11eb-90fe-befb369b0af7.PNG)
+  설명
+  ![예약4](https://user-images.githubusercontent.com/67767127/105971280-afdd2500-60cd-11eb-87e0-8dddb85ddbb5.PNG)
+  설명
+  ![예약5](https://user-images.githubusercontent.com/67767127/105971283-afdd2500-60cd-11eb-8e3a-6b288bb325cc.PNG)
+
+  -----------
