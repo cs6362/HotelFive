@@ -74,7 +74,7 @@
   설명
   ![로그인3](https://user-images.githubusercontent.com/67767127/105966899-92598c80-60c8-11eb-9108-4851e93813d2.PNG)
   설명
-  ![로그인4](https://user-images.githubusercontent.com/67767127/105966901-92f22300-60c8-11eb-9fe0-c37b5f56febe.PNG)
+  ![로그인4](https://user-images.githubusercontent.com/67767127/105971685-2548f580-60ce-11eb-9ccc-6b22eaf1437b.PNG)
   설명
 
 + 예약 
