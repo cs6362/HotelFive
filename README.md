@@ -52,7 +52,10 @@
   - ![dbmapjpg](https://user-images.githubusercontent.com/67767127/105947501-8eb80c80-60ac-11eb-8893-6e76a047e7fe.jpg)
   
 + 회원가입
-  -
+  - ![SINGUP1](https://user-images.githubusercontent.com/67767127/105949103-81e8e800-60af-11eb-8bab-12bcb04fd3b5.PNG)
+  - ![SINGUP2](https://user-images.githubusercontent.com/67767127/105949107-831a1500-60af-11eb-8a23-09c757ea270d.PNG)
+  - ![SINGUP2-WRITE](https://user-images.githubusercontent.com/67767127/105949114-86ad9c00-60af-11eb-99e3-bafda0bf8c97.PNG)
+  - ![SINGUP3](https://user-images.githubusercontent.com/67767127/105949119-89a88c80-60af-11eb-8a9d-4b3ab43c5766.PNG)
   
 + 로그인
   -
